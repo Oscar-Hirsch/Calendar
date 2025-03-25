@@ -3,6 +3,7 @@ public class Main {
         String [] monthsArray = {"Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"};
         String weekDays = "Mo Di Mi Do Fr Sa So ";
         int [] daysofMonth = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        // initialize the starting day
         int startingDay = 1;
 
         for (int i = 0; i < monthsArray.length; i++) {
@@ -17,6 +18,7 @@ public class Main {
                 if ((j + startingDay-1) % 7 == 0) {
                     System.out.println();
                 }
+                // calculate the starting day for the next month
                 if (j == daysofMonth[i]) {
                     startingDay = ((startingDay + daysofMonth[i]) % 7);
                     if (startingDay == 0) {
