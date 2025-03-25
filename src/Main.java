@@ -12,6 +12,7 @@ public class Main {
             for (int f = 0; f < (startingDay-1); f++) {
                 System.out.print("   ");
             }
+            // print the days with at least two spaces for each entry and make a gap of one space between entries
             for (int j = 1; j <= daysofMonth[i]; j++) {
                 System.out.printf("%2d", j);
                 System.out.print(" ");
